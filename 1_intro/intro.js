@@ -59,5 +59,88 @@ console.log(pi)
 
 //!     2.non primitive data type
 
-//!     function,object,array 
+//!     function,object,array
 
+// ! primitive datatype examples
+// ! number
+
+let age=16
+let salary=9000.50
+console.log(age,salary);
+console.log(typeof age);
+console.log(typeof salary);
+
+// ! boolean
+let isstudent =true
+console.log(isstudent);
+console.log(typeof isstudent);
+
+
+// ! string
+
+let msg="Hello how are you"
+console.log(msg);
+console.log(typeof msg);
+
+let msg2='i am Fine'
+console.log(msg2);
+console.log(typeof msg2);
+
+let msg3="this is also string"
+console.log(msg3);
+console.log(typeof msg3);
+
+//!  4  . undefined
+//!  when any variable is declared but not initialized that is called undefined
+//! the type of undefined is undefined
+
+let x=20
+
+x="hello"
+
+console.log(x);
+
+let phno
+console.log(phno);
+console.log(typeof phno);
+
+//! 5 . null
+
+//! type of null is object
+
+let sal = null
+console.log(sal);
+console.log(typeof sal)
+
+//! 6. big int
+let bigNum = 2n
+console.log(bigNum)
+console.log(typeof bigNum)
+
+//! non primitive data type
+
+//! 1.function
+
+function display(){
+        console.log("I am display function")
+}
+display()
+display()
+display()
+
+//! 2. array
+
+let arr = [10,20,"hello",true,30.50]
+console.log(arr)
+
+//! 3.object 
+
+let emp = {
+        name:"Ravi",// key and value pair and key is always string and value can be any datatype
+        age:22,
+        city:"chennai"
+}
+console.log(emp)
+console.log(emp.name)
+
+let num2 = 700 
