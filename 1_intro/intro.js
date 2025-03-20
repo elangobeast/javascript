@@ -8,9 +8,9 @@ console.log("I am external JS file");
 
 console.log("today is our first javascript class");
 
-document.writeln("hello how are you?");
+//document.writeln("hello how are you?");
 
-alert("hello how are you?")
+//alert("hello how are you?")
 
 // ! How to declare variable
      //! var, let , const
