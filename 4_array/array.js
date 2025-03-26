@@ -107,6 +107,76 @@ let x= str.split("").reverse().join("")
 
 console.log(x);//! olleh
 
+//! 10. Slice()
+//! It is used to extract the element from the array and it will return one new array 
+//! It will take two parameters (startIndex, endIndex  ) but it will not  tske the endIndex value
+//! it will not modify the original array
+
+let marks=[85,86,87,80,95]
+let slicedArr = marks.slice(1,3)
+console.log(slicedArr);
+console.log(marks);
+
+//! 11.splice()
+//! it is used to add , delete and replace element in the array
+//! it can take 3 parameters, (starIndex , delete count , replacemen value)
+//! it will return one array with removed elements
+//? blue line
+
+//todo : it will modify the original array
+
+let numbers =[66,65,44,33,22,11,77,88]
+
+numbers.splice(2,3,"hello")
+
+console.log(numbers);
+
+let a =numbers.splice(2,0,'hello')
+
+console.log(a);
+
+//! 1.map()
+
+//! it is one higher order array method
+//! it will take one callback function and this is callback function can be take 3 parameters .
+//!(element , index, array)
+//! it is used to traverse the array and if we want to do any operation with all elements of the array
+//! --we can do and it will return one array
+
+let arr2 = [10,20,30,40,50]
+
+arr2.map((ele, index , array)=> {
+  console.log(ele , index, array);
+  
+ }
+)
+
+let mappedArr = arr2.map((ele)=>{
+
+        return ele
+})
+
+console.log(mappedArr);
+
+// arr2.map((ele)=> {
+
+//   console.log(ele+100)
+//   add100.push(ele+100)
+//   console.log(add100);
+  
+// })
+let maparr2=arr2.map((ele)=>{
+  return ele+100
+})
+console.log(maparr2)
+
+
+
+
+
+
+
+
 
 
 
