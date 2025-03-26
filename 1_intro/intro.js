@@ -1,4 +1,4 @@
-console.log("I am external JS file");
+console.log("I am external JS file");//! I am external JS file
 
 //!  HOW MANY WAYS WE CAN WRITE INTERNAL JAVASCRIPT
         // 1.INTEERNAL JAVASCRIPT
@@ -6,7 +6,7 @@ console.log("I am external JS file");
 //! output methods in javascript
 
 
-console.log("today is our first javascript class");
+console.log("today is our first javascript class");//! today is our first javascript class
 
 //document.writeln("hello how are you?");
 
@@ -23,21 +23,21 @@ var a // variable declaration
 
 a= 20 // variable initialization 
 
-console.log (a)
+console.log (a)//! 20
 
 var b = 30
-console.log(b)
+console.log(b)//! 30
 
 var a=100           //! in var re declaration is possible
-console.log(a)
+console.log(a)//! 100
 
 let subject= "javascript"
-console.log(subject)
+console.log(subject)//! javascript
 
 //let subject   //!  re declaration is not possible 
 
 subject = "java"
-console.log(subject)    //! re initialization is possible
+console.log(subject) //! java   //! re initialization is possible
 
 
 //! const
@@ -45,7 +45,7 @@ console.log(subject)    //! re initialization is possible
 //! here declaration and initialization are we have to do in the same line.
 const pi=3.14  // dont type 3.14 in next line
 
-console.log(pi)
+console.log(pi)//! 3.14
 
 //! datatype in javascript
 //! 1. primitive data type 
@@ -66,29 +66,29 @@ console.log(pi)
 
 let age=16
 let salary=9000.50
-console.log(age,salary);
-console.log(typeof age);
-console.log(typeof salary);
+console.log(age,salary);//!16 9000.5
+console.log(typeof age);//! number
+console.log(typeof salary); //!number
 
 // ! boolean
-let isstudent =true
-console.log(isstudent);
-console.log(typeof isstudent);
+let isstudent =true 
+console.log(isstudent);  //! true
+console.log(typeof isstudent); //! boolean
 
 
 // ! string
 
 let msg="Hello how are you"
-console.log(msg);
-console.log(typeof msg);
+console.log(msg);//! Hello how are you
+console.log(typeof msg);//! string
 
 let msg2='i am Fine'
-console.log(msg2);
-console.log(typeof msg2);
+console.log(msg2);//! i am Fine
+console.log(typeof msg2);//! string
 
 let msg3="this is also string"
-console.log(msg3);
-console.log(typeof msg3);
+console.log(msg3);//! this is also string
+console.log(typeof msg3);//! string
 
 //!  4  . undefined
 //!  when any variable is declared but not initialized that is called undefined
@@ -98,40 +98,40 @@ let x=20
 
 x="hello"
 
-console.log(x);
+console.log(x);//! hello
 
 let phno
-console.log(phno);
-console.log(typeof phno);
+console.log(phno);//! undefined
+console.log(typeof phno);//! undefined
 
 //! 5 . null
 
 //! type of null is object
 
 let sal = null
-console.log(sal);
-console.log(typeof sal)
+console.log(sal);//! null
+console.log(typeof sal)//! object
 
 //! 6. big int
 let bigNum = 2n
-console.log(bigNum)
-console.log(typeof bigNum)
+console.log(bigNum)//! 2n
+console.log(typeof bigNum)//! bigint
 
 //! non primitive data type
 
 //! 1.function
 
 function display(){
-        console.log("I am display function")
+        console.log("I am display function")//! I am display function
 }
-display()
-display()
-display()
+display()//!I am display function
+display()//!I am display function
+display()//!I am display function
 
 //! 2. array
 
 let arr = [10,20,"hello",true,30.50]
-console.log(arr)
+console.log(arr)//! [ 10, 20, 'hello', true, 30.5 ]
 
 //! 3.object 
 
@@ -140,7 +140,7 @@ let emp = {
         age:22,
         city:"chennai"
 }
-console.log(emp)
-console.log(emp.name)
+console.log(emp)//! { name: 'Ravi', age: 22, city: 'chennai' }
+console.log(emp.name) //! Ravi
 
 let num2 = 700 
