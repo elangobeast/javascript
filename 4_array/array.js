@@ -170,6 +170,97 @@ let maparr2=arr2.map((ele)=>{
 })
 console.log(maparr2)
 
+let sub=['html','css','js']
+
+let upper = sub.map((ele)=>{
+  return ele.toUpperCase()
+})
+console.log(upper);
+
+let message=['hi', 'how ', 'are', 'you']
+
+let correct = message.map((text)=>{
+  return text.toUpperCase()
+})
+console.log(correct);
+
+// let numberr=[10,20,30,40,50]
+// let arrr=[]
+// let b=m2.map((ele)=>{
+//   if(ele>30){
+//     msg3.push(ele)
+//   }
+// })
+// console.log(m3);
+//! filter()
+//! it is one higherorder array method
+//! it is used to check the condition andf if the condition is matching the it will return
+//!  the elemnt
+//! is can take 3 parameters (element, index, array)
+
+let evenNumbers = [2,4,6,8,10,12,14]
+
+//! op ;[2,4,6,8]
+
+let lessthan10= evenNumbers.filter((ele)=>{
+        return ele < 10
+})
+console.log(lessthan10);
+
+let number=[1,2,3,4,5,6]
+let sum=0
+// op : all all the number
+let add=number.map((ele)=>{
+    return sum=sum+ele
+})
+console.log(add);
+
+//! reduce()
+//! it is one higher order array method
+//! it is used to reduce the array line one single value
+//! it wil take a patameter ( accumulator , element)
+//! it will return one single value
+//! it will take 4 parameter {accumulator,element,index,array}
+
+let summ = evenNumbers.reduce((acc,ele) =>{
+  return acc+ele 
+})
+
+console.log(summ);
+
+let multiplication = evenNumbers.reduce((acc,ele)=>{
+  return acc*ele
+})
+
+console.log(multiplication);
+
+//! sort()
+//! it is used to sort the array
+//! it will return the sorted array
+//! it will take one callback function
+//! it will take two parameters (a,b)
+
+let arr11=[4,11,22,1,3,44,2,9,3,2]
+let asc=arr11.sort((a,b)=>{
+  return a-b
+})
+console.log(asc);
+
+let desc=arr11.sort((a,b)=>{
+  return b-a
+})
+
+console.log(desc);
+
+
+
+
+
+
+
+
+
+
 
 
 
