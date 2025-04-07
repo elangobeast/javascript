@@ -119,7 +119,7 @@ let ob2 ={
     obname:"laptop",
     price :50000
 }
-console.log(ob2);
+console.log(ob2);//! 
 Object.seal(ob2)
 
 delete ob2.price //! not possible
@@ -134,9 +134,43 @@ console.log(ob2);
 
 console.log(Object.isSealed(ob2));
 
-console.log(Object.isSealed(ob1));
+console.log(Object.isSealed(ob1));//! true
 
-console.log(Object.isSealed(student));
+console.log(Object.isSealed(student));//! false
+
+//! 8. Object.assign()
+//! it is used to combine two or more than two objects and it will return one new object
+let emp ={
+    empname : "aadhav",
+    sal : 20000
+}
+let dept ={
+    deptno : 10,
+    location : "chennai"
+}
+//! let employee  = Object.assign(emp,dept)
+let employee =Object.assign({},emp,dept)
+
+console.log(employee);
+
+let stu ={
+    rno : 4001,
+    stuname : "bava"
+}
+let all = Object.assign({},emp,dept,stu);
+console.log(all);
+
+//! Objectname.hasOwnProperty
+
+//! it is used to check whether the key is present or not
+//! if it is present it will return true otherwise it will return false
+
+console.log(emp.hasOwnProperty('sal'));
+console.log(emp.hasOwnProperty('phno'));
+console.log(stu.hasOwnProperty('stuname'));
+
+
+
 
 
 

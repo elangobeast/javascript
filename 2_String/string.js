@@ -106,7 +106,7 @@ console.log(lastName.lastIndexOf("e"))   //-1
 // this method is used to combine a two or maore than two strings together and it will return one new string
 
 let fullname=sname.concat(" ",lastName)
-console.log(fullname)
+console.log(fullname)//! 
 
 
 // ! 8.trim()
