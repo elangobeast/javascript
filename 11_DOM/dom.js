@@ -65,5 +65,7 @@ ul.innerHTML = "<li> html </li> <li> js </li> <li> css</li><li> js</li>"
 
 console.log(ul.innerHTML);
 
+let cardd = document.getElementsByClassName("card")
 
+cardd[2].innerHTML = "<h1> I am Card 3 from js file</h1>"
 
