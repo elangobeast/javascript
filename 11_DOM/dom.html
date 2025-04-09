@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            height: 70px;
+            background-color: #212121;
+            color:white;    
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav > ul{
+            display: flex;
+            list-style: none;
+        }
+        nav > ul > li{
+            margin-right: 8px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        main{
+            height: 250px;
+            background-color: antiquewhite;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        main > h1{
+            text-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        main > button{
+            padding: 10px 15px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: rgb(130, 199, 26);
+            color:white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        section{
+            height: calc(100vh - 380px);
+            display: flex;
+            background-color: #ccc;
+            justify-content: center;
+            gap:15px;
+            align-items: center;
+            
+        }
+
+        section > .card{
+            width: 300px;
+            height: 240px;
+            background-color: white;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:20px;
+
+        }
+        .card > img{
+            height: 100px;
+        }
+
+        footer{
+            height: 60px;
+            background-color: #212121;
+            color:white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <h2 id="heading2"> MyLogo</h2>
+
+        <ul>
+            <li>Home</li>
+            <li>about</li>
+            <li>contact us</li>
+        </ul>
+    </nav>
+
+    <main>
+         <h1> DOM in Javascript</h1>
+         <button> Read More </button>
+    </main>
+
+    <section>
+        <div class="card">
+             <img src="https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+             <h3> mobile</h3>
+             <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="card">
+             <img src="https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+             <h3> mobile</h3>
+             <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="card">
+             <img src="https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+             <h3> mobile</h3>
+             <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </section>
+    <footer>
+         <p> &copy; 2025 dom and event</p>
+    </footer>
+    <script src="./dom.js"></script>
+
+    <!-- <p id="p1">HELLO
+        
+    </p> -->
+</body>
+</html>
