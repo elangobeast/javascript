@@ -69,3 +69,57 @@ let cardd = document.getElementsByClassName("card")
 
 cardd[2].innerHTML = "<h1> I am Card 3 from js file</h1>"
 
+//! HOW TO ADD STYLING TO THE ELEMENT
+
+let btn = document.getElementsByTagName("button");
+
+//!console.log(btn);
+
+btn[0].style.backgroundColor="red"
+
+//! HOW TO ADD OR REMOVE CLASS TO THE ELEMENT
+
+let footer = document.querySelector("footer")
+
+console.log(footer.classList);
+
+footer.classList.add("san");
+
+console.log(footer.classList);
+
+footer.classList.remove("hi");
+console.log(footer.classList);
+
+let card2 = document.getElementsByClassName("card")
+
+console.log(card2);
+
+// card2[1].classList.add("card2");
+
+// console.log(card.card2[1].classList);
+
+//! 5. HOW TO CREATE AN ELEMENT
+
+
+
+
+let div = document.createElement("div")
+
+div.classList.add("card")
+
+div.innerHTML =`<h1> I AM CARD 4</h1>`
+
+card2[2].before(div)
+
+let p1 = document.createElement("p1")
+
+p1.innerText="I am paragraph from js file"
+
+btn[0].before(p1)
+
+let BTn = document.createElement("button")
+
+BTn.innerText = "read more"
+
+card2 [0].prepend(BTn)
+card2 [0].append(BTn)
