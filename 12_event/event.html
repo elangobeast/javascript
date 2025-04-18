@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event in js</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+    }
+
+    header>{
+        height: 200px;
+        background-color: beige;
+        display: flex;
+        flex-direction: column;
+        justify-self: unset;
+        align-items: center;
+        
+    }
+    header > button{
+        padding: 10px 20px;
+        border: 1px solid #ccc;
+        background-color: rgb(255, 127, 127);
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 10px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+    }
+    section{
+        height: 250px;
+        background-color: blueviolet;
+    }
+
+    #btn1,#btn2{
+        background-color: burlywood;
+    }
+    section > button{
+        padding: 10px 20px;
+        border: 1px solid #ccc;
+        background-color: aquamarine;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 10px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+    }
+
+    article{
+        background-color: aqua;
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    article > .box {
+        background-color: aliceblue;
+        width: 260px;
+        height: 150px;
+        border-radius: 10px;
+    }
+</style>
+<body>
+    <header onmouseover="changeColor()" onmouseleave="changeColor2()">
+        <h1>  event  in  javascript </h1>
+        <p> A javascri[t </p>
+        <button onclick="display()"> click me </button>
+    </header>
+
+    <section>
+        <h2>Example for event listener</h2>
+        <button id="btn1">Double click button</button>
+        <button id="btn2"> click me</button>
+
+    </section>
+
+    <article>
+        <div class="box" id="box1">
+            <h1>hello everyone</h1>
+            <p>i am para</p>
+        </div>
+        <div class="box" id="box2">
+            <h1>hello everyone</h1>
+            <p>i am para</p>
+        </div>
+    </article>
+
+    <script src="./event.js"></script>
+    
+</body>
+</html>

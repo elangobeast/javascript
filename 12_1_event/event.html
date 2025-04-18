@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(148, 148, 209);
+            
+        }
+        header > button{
+            height: 50px;
+            width: 140px;
+            background-color: rgb(156, 13, 13);
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+        header > p{
+            font-size: 18px;
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(175, 175, 214);
+        }
+        section > #btn1{
+            height: 50px;
+            width: 140px;
+            background-color: rgb(168, 41, 41);
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+        section > #btn2{
+            height: 50px;
+            width: 140px;
+            background-color: rgb(168, 41, 41);
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+        .outer{
+            width: 100vw;
+            height: 300px;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 100px;
+        }
+
+        .outer > #inner1{
+            height: 200px;
+            width: 200px;
+            background-color: white;
+        }
+        .outer > #inner2{
+            height: 200px;
+            width: 200px;
+            background-color: white;
+        }
+    </style>
+    <header onmouseover="changeColor()" onmouseleave="changeColor2()">
+        <h1>Event in Js</h1>
+        <p>A JavaScript event is a specific action that occurs within a web page or application, such as clicking on an element, moving the mouse, pressing a key, or loading a page.</p>
+        <button onclick="display()">Click me</button>
+    </header>
+
+    <section>
+        <h1>Example for Event Listner</h1>
+        <button id="btn1">Click me</button>
+        <button id="btn2">Double Click me</button>
+    </section>
+
+    <div class="outer">
+        <div id="inner1">
+            <h1>hello everyone</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div id="inner2">
+
+        </div>
+    </div>
+
+    <script src="./event.js"></script>
+</body>
+</html>
